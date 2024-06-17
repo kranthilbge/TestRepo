@@ -1,0 +1,77 @@
+Creating base views and combined views in Denodo Design Studio involves a series of steps to connect to data sources, create the views, and then combine them as needed. Below is a step-by-step guide for creating both base views and combined views in Denodo Design Studio:
+
+### 1. Connect to a Data Source
+1. **Open Denodo Design Studio**:
+   - Log in to Denodo Design Studio with your credentials.
+
+2. **Create a Data Source**:
+   - Navigate to the **Data Sources** tab.
+   - Click on **New** to create a new data source.
+   - Choose the type of data source (e.g., JDBC, CSV, Web service, etc.).
+   - Fill in the necessary connection details (e.g., JDBC URL, credentials, etc.).
+   - Test the connection to ensure it is configured correctly.
+   - Save the data source.
+
+### 2. Create Base Views
+1. **Navigate to the Data Source**:
+   - In the **Data Sources** tab, find and select your data source.
+
+2. **Create Base View**:
+   - Click on the **Create Base View** button.
+   - Select the specific tables or files you want to create base views from.
+   - For each table or file, Denodo will automatically generate a base view.
+   - Configure the base view as needed (e.g., renaming fields, setting data types, etc.).
+   - Save the base view.
+
+### 3. Create Combined Views
+1. **Navigate to the Views Tab**:
+   - Go to the **Views** tab where you will find all your base views listed.
+
+2. **Create a New Combined View**:
+   - Click on **New** and select **Join** to create a combined view through a join operation.
+   - Drag and drop the base views you want to combine into the design area.
+   - Specify the join conditions (e.g., join columns, join type such as inner join, left join, etc.).
+   - Optionally, you can add more operations like **Unions** or **Intersections** if combining views in different ways.
+
+3. **Configure the Combined View**:
+   - Once the views are combined, you can configure the resulting combined view:
+     - Rename fields if necessary.
+     - Apply transformations or functions to fields.
+     - Filter records if needed.
+     - Define the output schema and data types.
+   
+4. **Save the Combined View**:
+   - Name your combined view appropriately.
+   - Save the combined view.
+
+### 4. Validate and Test the Views
+1. **Validate the Views**:
+   - Use the **Validate** option to ensure there are no errors in your base and combined views.
+
+2. **Execute the Views**:
+   - Run a few queries on your views to test the data and ensure it returns the expected results.
+
+### 5. Deploy and Use the Views
+1. **Publish the Views**:
+   - Make sure the views are available to the users or applications that need to consume them.
+
+2. **Access and Integrate**:
+   - Integrate the views with your BI tools, applications, or services that will use the data.
+
+### Summary of Steps
+1. **Connect to Data Source**:
+   - Create a new data source and configure the connection.
+   
+2. **Create Base Views**:
+   - Generate base views from the data source tables or files.
+   
+3. **Create Combined Views**:
+   - Combine base views using joins, unions, etc., and configure the combined view.
+   
+4. **Validate and Test**:
+   - Validate the views and execute sample queries to test them.
+   
+5. **Deploy and Use**:
+   - Publish and integrate the views for use in your applications or reporting tools.
+
+This process ensures that you have a structured and validated way to access and combine data within Denodo Design Studio.
